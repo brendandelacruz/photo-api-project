@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo-api.css">
+    <title>Photo API Project</title>
+</head>
+<body>
+    <div id="content-container">
+        <div class="intro-text">
+            <h2>Unsplash</h2>
+            <p>The internet’s source for visuals.</p>
+            <p>Powered by creators everywhere.</p>
+        </div>
+        <form id="search-form" onsubmit="return false;">
+            <button type="submit" id="search-button">
+                <svg class="y_Um7 SWMue HvxXv" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false" style="flex-shrink: 0;"><desc lang="en-US">A magnifying glass</desc><path d="M16.5 15c.9-1.2 1.5-2.8 1.5-4.5C18 6.4 14.6 3 10.5 3S3 6.4 3 10.5 6.4 18 10.5 18c1.7 0 3.2-.5 4.5-1.5l4.6 4.5 1.4-1.5-4.5-4.5zm-6 1c-3 0-5.5-2.5-5.5-5.5S7.5 5 10.5 5 16 7.5 16 10.5 13.5 16 10.5 16z"></path></svg>
+            </button>
+            <input type="search" placeholder="Search photos and illustrations" class="search-bar" id="search-input">
+        </form>
+
+        <div id="results-container"></div>
+    </div>
+    <script src="photo-api.js"></script>
+</body>
+</html>
