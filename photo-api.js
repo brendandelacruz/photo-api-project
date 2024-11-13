@@ -34,16 +34,11 @@ function displayPhotoApp(data) {
     });
 }
 
-searchForm.addEventListener("submit", function() {
+// this function handles both the click of the search button and the enter since they are both of type submit in the form element
+searchForm.addEventListener("submit", function(e) {
+    e.preventDefault();
     const query = searchInput.value.trim();
     if(query) {
-        fetchPhotos(query);
-    }
-});
-
-searchButton.addEventListener('click', () => {
-    const query = searchInput.value.trim();
-    if (query) {
         fetchPhotos(query);
     }
 });

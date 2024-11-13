@@ -58,14 +58,11 @@ p {
 }
 
 #results-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    columns: 3;
 }
 
 #results-container div {
-    width: calc(33.33% - 10px); /* Three images per row with a little space in between */
+    width: 100%;
     margin-bottom: 15px;
 }
 
