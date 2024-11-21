@@ -71,3 +71,10 @@ p {
     height: auto;
     display: block;
 }
+
+.unsplash-credit {
+    text-align: right;
+    font-size: 10px;
+    opacity: 0.3;
+    margin: 40px 0 20px;
+}
